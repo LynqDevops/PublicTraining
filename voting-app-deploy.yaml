@@ -11,7 +11,6 @@ spec:
     matchLabels:
       name: voting-app-pod
       app: demo-voting-app
-  
   template:
     metadata:
       name: voting-app-pod
@@ -21,7 +20,7 @@ spec:
     spec:
       containers:
         - name: voting-app
-          image: kodekloud/examplevotingapp
+          image: kodekloud/examplevotingapp_vote:v1
           ports:
             - containerPort: 80
 
